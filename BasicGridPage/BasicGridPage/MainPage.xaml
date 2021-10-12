@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+        <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        x:Class="BasicGridPage.MainPage"
+        Title="Basic Grid demo">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition />
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <BoxView Color="Red" />
+        <Label Text="Каждый"
+ HorizontalOptions="Center"
+ VerticalOptions="Center" />
+        <BoxView Grid.Column="1"
+ Color="Orange" />
+        <Label Grid.Column="1"
+ Text="Охотник"
+ HorizontalOptions="Center"
+ VerticalOptions="Center" />
+        <BoxView Grid.Row="1"
+ Color="Yellow" />
+        <Label Grid.Row="1"
+ Text="Желает"
+ HorizontalOptions="Center"
+ VerticalOptions="Center" />
+        <BoxView Grid.Row="1"
+ Grid.Column="1"
+ Color="Green" />
+        <Label Grid.Row="1"
+ Grid.Column="1"
+ Text="Знать"
+ HorizontalOptions="Center"
+ VerticalOptions="Center" />
+        <BoxView Grid.Row="2"
+ Grid.ColumnSpan="2"
+ Color="Violet" />
+        <Label Grid.Row="2"
+ Grid.ColumnSpan="2"
+ Text="Фазана"
+ HorizontalOptions="Center"
+ VerticalOptions="Center" />
+    </Grid>
+</ContentPage>
